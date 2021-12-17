@@ -4,7 +4,7 @@ pipeline {
 	stages{
 		stage('inicial'){
 			steps{
-				echo 'Testando funcionamento automatico'
+				echo 'Testando e mostrando pro Leonzinho'
 			}
 		}
 	}
