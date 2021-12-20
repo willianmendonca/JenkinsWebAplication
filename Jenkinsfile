@@ -5,11 +5,11 @@ pipeline {
 		stage('inicial'){
 			steps{
 				sshagent(credentials: ['jenkinslab']){
-					sh'
+					sh'''
 						mkdir /home/jenkins/testandooutrabranch
 						touch /home/jenkins/testandooutrabranch/testandooutrabranch.txt
 						echo testando novamente >> /home/jenkins/testandooutrabranch/testandooutrabranch
-					'
+					'''
 				}
 			}
 		}
