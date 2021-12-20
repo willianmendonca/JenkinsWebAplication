@@ -8,7 +8,7 @@ pipeline {
 					sh'
 						mkdir /home/jenkins/testandooutrabranch
 						touch /home/jenkins/testandooutrabranch/testandooutrabranch.txt
-						echo o teste dessa branch foi um sucesso >> /home/jenkins/testandooutrabranch/testandooutrabranch
+						echo testando novamente >> /home/jenkins/testandooutrabranch/testandooutrabranch
 					'
 				}
 			}
