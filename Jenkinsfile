@@ -3,6 +3,7 @@ pipeline {
 
 	stages{
 		stage('inicial'){
+			node('JenkinsLAB02'){
 			steps{
 				sshagent(credentials: ['jenkinslab']){
 					sh'''
@@ -11,9 +12,8 @@ pipeline {
 						echo testando novamente >> /home/jenkins/testandooutrabranch/testandooutrabranch
 					'''
 				}
-				
-				echo 'segundo teste multibranch'
 			}
 		}
+	}
 	}
 }
