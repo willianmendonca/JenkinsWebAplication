@@ -4,7 +4,7 @@ pipeline {
 	stages{
 		stage('inicial'){
 			steps{
-				echo 'Primeiro teste multibranch'
+				echo 'segundo teste multibranch'
 			}
 		}
 	}
