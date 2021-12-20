@@ -1,5 +1,5 @@
 pipeline {
-	agent any
+	agent jenkinslab
 
 	stages{
 		stage('inicial'){
