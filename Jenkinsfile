@@ -6,9 +6,9 @@ pipeline {
 			steps{
 				sshagent(credentials: ['jenkinslab']){
 					sh'''
-						mkdir /home/jenkins/teste
-						touch /home/jenkins/testandooutrabranch
-						echo o teste dessa branch foi um sucesso >> /home/jenkins/teste/testandooutrabranch
+						mkdir /home/jenkins/testandooutrabranch
+						touch /home/jenkins/testandooutrabranch/testandooutrabranch
+						echo o teste dessa branch foi um sucesso >> /home/jenkins/testandooutrabranch/testandooutrabranch
 					'''
 				}
 				
