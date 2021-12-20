@@ -8,6 +8,7 @@ pipeline {
 					sh'''
 						mkdir /home/jenkins/cenoura
 						touch /home/jenkins/cenoura/testandooutrabranch_homologacao.txt
+						echo aaaaaaaaaaaaaaaaaaaaaaaa >> /home/jenkins/cenoura/testandooutrabranch_homologacao.txt
 					'''
 				}
 			}
